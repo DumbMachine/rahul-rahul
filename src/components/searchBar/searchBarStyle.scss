@@ -1,0 +1,186 @@
+
+
+
+
+.searchBarWrapper{
+  height: 512px;
+  width: 731px;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #292731;
+  border-radius: 16px;
+
+  &__searchInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 682px;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    border-radius: 16px;
+    &__iconInputWrapper{
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+    &__bar {
+      // whitesmoke, makes <input> tag go nuts, !blame abhi
+      color:white;
+      background:black; 
+      border:none;
+      width: 80%;
+      height: 80%;
+      font-size: 16px;
+      outline: none;
+      width: 100%;
+      margin-left: 8px;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // height: 50px;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    justify-content: flex-end;
+    padding-right: 20%;
+    color: whitesmoke;  
+    font-size: 12px;
+    &__filterItem {
+      display: flex;
+      justify-content: space-around;
+      min-width: 80px;
+      height: 32px;
+      background-color: #17161D;
+      align-items: center;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-radius: 8px;
+      margin-right: 16px;
+      &__icon{
+        padding-right: 8px;
+      }
+    }
+  }
+
+  // &__searchResults {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  //   color: whitesmoke;
+  //   width: 100%;
+  //   max-width: 100%;
+  //   padding-left: 50px;
+  //   padding-right: 50px;
+  //   &__item { 
+  //     margin-bottom: 20px;
+
+  //     &:hover {
+  //       background: rgba(211, 211, 211, 0.5);
+  //       border-radius: 16px;
+  //     }
+  //     &__active {
+  //       background: rgba(211, 211, 211, 0.5);
+  //     }
+  //     &__title {
+  //       display: flex;
+  //       flex-direction: row;
+  //       align-items: center;
+  //       // padding: 0 20px 0px 20px;
+  //       width: 660px;
+  //       height: 36px;  
+  //       padding: 10px 0;
+
+  //       &__icon {
+  //         padding-right: 20px;
+  //       }
+  //     }
+  //     &__subContent {
+  //       color: lightblue;
+  //       display: flex;
+  //       // align-items: center;
+  //       justify-content: center;
+  //     }
+  //   }
+  // }
+ 
+  &__searchResults {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    width: 100%;
+    // padding-left: 50px;
+    // padding-right: 50px;
+    &__item { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+      // &:hover {
+      //   background: rgba(211, 211, 211, 0.5);
+      //   border-radius: 16px;
+      // }
+      // &__active {
+      //   background: rgba(211, 211, 211, 0.5);
+      // }
+      &__title {
+          display: flex;
+          font-size: 12px;
+          flex-direction: row;
+          align-items: center;
+          // padding: 0 20px 0px 20px;
+          width: 626px;
+          height: 36px;  
+          // padding: 10px 0;
+          background-color: #3C3744;
+          border-radius: 8px;
+          justify-content: space-between;
+          padding-left: 16px;
+          padding-right: 16px;
+          &:hover {
+           border:2px solid #8F2685;
+          }
+          &__active {
+            background-color: #8F2685;
+          }
+
+          &__iconHeaderWrapper{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+          }
+          &__icon {
+            display: flex;
+            align-items: center;
+            padding-right: 16px;
+            &__img{
+              width: 20px;
+              height: 20px;
+            }
+          } 
+      }
+      &__subContent{
+        width: 626px;
+        height: 36px;
+        padding: 8px;
+        background-color: #332E38;
+        border-radius: 0 0 8px 8px;
+        font-size: 12px;
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+      }
+    }
+  }
+}
